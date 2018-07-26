@@ -1,0 +1,5 @@
+
+我们需要使用第三方的json解析框架的话：
+	1.我们需要在pom.xml中引入相应的依赖
+	2.需要在APP.java中继承WebMvcConfigurerAdapter，重写方法configureMessageConverters，添加自己定义的json解析框架
+	2.1 @Bean注入第三方的json解析框架 
