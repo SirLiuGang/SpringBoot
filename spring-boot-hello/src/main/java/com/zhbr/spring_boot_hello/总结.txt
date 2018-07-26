@@ -1,0 +1,6 @@
+
+1.新建一个HelloController
+
+2.编写Spring Boot 启动类
+
+3.进行访问测试，默认的端口号是8080
