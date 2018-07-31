@@ -48,17 +48,27 @@
 			<version>1.2.15</version>
 		</dependency>
 		
+		<!-- 引入springboot devtools的依赖包，用于热部署（修改了方法后也可以快速部署） -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+			<scope>true</scope>
+		</dependency>
+		
 	</dependencies>
 	
 	<!-- 构建节点 -->
 	<build>
 		<plugins>
 			<!-- 在这里添加springloader plugin -->
+			<!-- springloaded hot deploy 热部署-->
+			<!-- 
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<dependencies>
-					<!-- springloaded hot deploy -->
+					
 					<dependency>
 						<groupId>org.springframework</groupId>
 						<artifactId>springloaded</artifactId>
@@ -75,6 +85,17 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			 -->
+			 
+			<!-- 这是springboot devtools plugin -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<!-- fork：如果没有配置该项，那个devtools不会起作用，即应用不会restart -->
+					<fork>true</fork>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

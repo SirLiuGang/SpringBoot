@@ -1,0 +1,36 @@
+
+总结：
+	1.当我们修改了方法的返回值，是能够进行热部署的
+	2.当我们重新创建了一个方法，是能够进行热部署的
+	3.当我们重新创建了一个Class，是能够进行热部署的
+
+说明：
+	1.devtools会监听classpath下的文件变动，并且会立即重启应用（发生在保存时机）。注意：由于采用的虚拟机机制，该项重启是很快的
+	2.devtools可以实现页面热部署（即该页面修改后会立即生效，这个可以直接在application.properties文件中配置spring.thymeleat.cache=false来实现(这里注意不同的模板配置不一样)）
+
+不能使用分析：
+	1.对应的spring-boot版本是否正确，使用到的是1.4.1版本；
+	2.是否加入plugin以及属性<fork>true</fork>
+	3.Eclipse Project是否开启了Build Automatically
+	4.如果设置SpringApplication.setRegisterShutdownHook(false)，则自动重启将不起作用
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
