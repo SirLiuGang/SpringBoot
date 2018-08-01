@@ -32,20 +32,7 @@
  4.需要创建一个接口继承CrudRepository
  5.需要创建一个Service
  6.需要创建一个Controller
- 7.代码测试
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ 7.代码测试 
  
  
  
