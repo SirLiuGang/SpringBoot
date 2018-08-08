@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  *		新建测试启动类（App-Main方法）
  *		测试代码
  */
-// 等价于@Controller 和 @RequestBody
+// 等价于@Controller 和 @ResponseBody
 @RestController
 public class HelloController {
     
