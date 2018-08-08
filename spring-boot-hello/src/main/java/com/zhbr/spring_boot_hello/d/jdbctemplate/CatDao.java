@@ -20,7 +20,7 @@ public class CatDao {
 	
 	public Cat selectByCatName(String catName) {
 		// 1.定义一个sql语句
-		String sql = "select * from cat where cat_name = ?";
+		String sql = "seledct * from cat where cat_name = ?";
 		
 		// 2.定义一个RowMapper
 		RowMapper<Cat> rowMapper = new BeanPropertyRowMapper<>(Cat.class);
