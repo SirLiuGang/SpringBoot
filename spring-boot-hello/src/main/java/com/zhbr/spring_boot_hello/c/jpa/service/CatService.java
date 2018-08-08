@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.zhbr.spring_boot_hello.c.jpa.bean.Cat;
 import com.zhbr.spring_boot_hello.c.jpa.repository.Cat2Repository;
 import com.zhbr.spring_boot_hello.c.jpa.repository.CatRepository;
+import com.zhbr.spring_boot_hello.d.jdbctemplate.CatDao;
 
 @Service
 public class CatService {
@@ -17,6 +18,9 @@ public class CatService {
 	
 	@Resource
 	private Cat2Repository cat2Repository;
+	
+	@Resource
+	private CatDao catDao;
 	
 	/**
 	 * save,update,delete 方法需要绑定事务
@@ -62,4 +66,29 @@ public class CatService {
 	public Cat findMyCatName(String catName) {
 		return cat2Repository.findMyCatName(catName);
 	}
+	
+	/**
+	 * 调用JdbcTemplate的中的方法
+	 */
+	public Cat selectByCatName(String catName) {
+		return catDao.selectByCatName(catName);
+	}
+	
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -69,6 +69,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		<!-- 如果要使用jdbcTemplate，需要引入spring-boot-starter-jdbc，若引入上边的，则可以不引入该包 -->
 		
 		<!-- springboot jpa 整合 hibernate 添加依赖结束 -->
 		
