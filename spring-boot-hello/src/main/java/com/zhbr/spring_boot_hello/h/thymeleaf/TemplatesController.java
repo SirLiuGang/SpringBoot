@@ -27,6 +27,12 @@ public class TemplatesController {
 		map.put("name", "LiuGang");
 		return mv;
 	}
+	
+	@RequestMapping("/helloFtl")
+	public String helloFtl(Map<String, Object> map) {
+		map.put("name", "Liu");
+		return "helloFtl";
+	}
 }
 
 

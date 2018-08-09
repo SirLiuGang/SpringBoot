@@ -1,0 +1,9 @@
+
+
+在 springboot中如何使用模板引擎的步骤：
+	1.在pom.xml中添加相应的依赖包，thymeleaf和freemarker
+	2.在application.properties中添加配置信息，开发过程建议关闭缓存
+	3.编写模板文件，thymeleaf默认的后缀是.html，freemarker默认的后缀是.ftl
+	4.编写访问模板文件的Controller，建立请求映射地址
+	
+注意：thymeleaf和freemarker可以并存使用
