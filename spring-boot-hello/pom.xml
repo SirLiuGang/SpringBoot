@@ -73,6 +73,15 @@
 		
 		<!-- springboot jpa 整合 hibernate 添加依赖结束 -->
 		
+		<!-- 添加thymeleaf的依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		
+		
+		
+		
 	</dependencies>
 	
 	<!-- 构建节点 -->
